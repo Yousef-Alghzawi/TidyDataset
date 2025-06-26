@@ -1,0 +1,33 @@
+## Codebook for tidy_dataset.txt
+
+This dataset contains the average of each variable for each activity and each subject from the UCI HAR Dataset. The original data was collected from accelerometers and gyroscopes of Samsung Galaxy S smartphones during different activities.
+
+### Variables
+
+- `Subject`: ID of the subject (ranges from 1 to 30).
+- `Activity`: Type of activity performed. One of:
+  - WALKING
+  - WALKING_UPSTAIRS
+  - WALKING_DOWNSTAIRS
+  - SITTING
+  - STANDING
+  - LAYING
+
+All other variables are measurements averaged per Subject and Activity. These come from the accelerometer and gyroscope signals. For example:
+
+- `TimeBodyAccelerometerMeanX`: Mean of time-domain body accelerometer signals in X direction
+- `TimeBodyAccelerometerStdY`: Standard deviation of body accelerometer in Y direction
+- `FrequencyBodyGyroscopeMeanZ`: Mean of frequency-domain body gyroscope signals in Z direction
+
+(Note: `Time` and `Frequency` indicate domain; `Accelerometer` or `Gyroscope` indicate the sensor; `Mean` and `Std` indicate the type of value.)
+
+### Units
+
+All measurement values are normalized and dimensionless.
+
+### Summary
+
+- Total subjects: 30
+- Total activities: 6
+- Number of variables: 68 (1 Subject + 1 Activity + 66 measurement variables)
+- Observations: 180 (30 subjects × 6 activities)
